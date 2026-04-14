@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishwamitra Institute - Test App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <h1>Vishwamitra Institute Test App</h1>
+        <p>
+          SSC, Railway, Bank, MP Police, MPESB students ke liye weekly Saturday
+          full-length tests aur subject-wise sectional practice.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card exams">
+        <h2>Exam Tracks</h2>
+        <div class="badge-row">
+          <span class="badge">SSC</span>
+          <span class="badge">Railway</span>
+          <span class="badge">Bank</span>
+          <span class="badge">MP Police</span>
+          <span class="badge">MPESB</span>
+        </div>
+      </section>
+
+      <section class="card schedule">
+        <h2>Saturday Full-Length Test</h2>
+        <p class="muted">
+          Har Saturday ek complete mock test conduct hoga jo real exam pattern pe
+          based hoga.
+        </p>
+        <ul>
+          <li><strong>Time:</strong> 10:00 AM - 12:00 PM</li>
+          <li><strong>Mode:</strong> Online + Instant score</li>
+          <li><strong>Analysis:</strong> Rank, accuracy, weak-topic report</li>
+        </ul>
+        <button id="registerBtn">Register for This Saturday</button>
+        <p id="registerMsg" class="success hidden"></p>
+      </section>
+
+      <section class="card sectional">
+        <div class="section-head">
+          <h2>Sectional Tests</h2>
+          <select id="filterExam">
+            <option value="all">All Exams</option>
+            <option value="SSC">SSC</option>
+            <option value="Railway">Railway</option>
+            <option value="Bank">Bank</option>
+            <option value="MP Police">MP Police</option>
+            <option value="MPESB">MPESB</option>
+          </select>
+        </div>
+        <div id="testList" class="test-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Vishwamitra Institute | Learn • Practice • Crack</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
